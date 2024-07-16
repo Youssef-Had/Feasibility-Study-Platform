@@ -5,7 +5,7 @@
     --white-color: #ffffff;
     --lgreen-color: #e6fdef;
     --lblue-color: #e2fffe;
-    --lgray-color: #f5f5f5;
+    --lgray-color: #fff6f6;
     --span-color: #fffcae;
     --green-color: #2ac2bc;
     --red-color: #ff3150;
@@ -57,7 +57,7 @@ body {
     height: 6rem;
     margin: 2rem 0;
     padding-right: 3rem;
-    background-color: var(--lgreen-color);    background-image: linear-gradient(45deg, #e9f8fa, rgba(223, 247, 243, .239), rgba(229, 247, 223, .651));
+    background-image: linear-gradient(45deg, #e9f8fa, rgba(223, 247, 243, .239), rgba(229, 247, 223, .651));
 }
 
 .flow-table .container-top .links-box h6 {
