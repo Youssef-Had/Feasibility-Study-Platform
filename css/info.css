@@ -1,0 +1,409 @@
+:root{
+    --main-color: #252e62;
+    --yellow-color: #ffda09;
+    --p-color: #2e376b	;
+    --white-color: #ffffff;
+    --lgreen-color: #edfef4;
+    --lblue-color: #e2fffe;
+    --span-color: #fffcae;
+    --green-color: #2ac2bc;
+    --red-color: #ff3150;
+    --gray-color: #799ea1;
+    --link-color: #50a3c4;
+    --shadow-color: #e3e2e2;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    color: var(--main-color);
+    font-family: "Noto Kufi Arabic", sans-serif;
+    letter-spacing: -.05rem;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+} 
+
+.info .container-top .logo {
+    width: 100%;
+    height: 5rem;
+    margin: 1rem 0;
+    text-align: center;
+    align-content: center;
+}
+
+.info .container-top .logo img {
+    width: 15rem;
+    height: 5rem;
+}
+
+.info .container-top .links-box {
+    align-content: center;
+    width: 100%;
+    height: 6rem;
+    margin: 2rem 0;
+    padding-right: 3rem;
+    background-color: var(--lgreen-color);
+}
+
+.info .container-top .links-box h6 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.info .container-top .links-box a.link {
+    font-weight: 700;
+    color : var(--link-color);
+}
+
+.info .container-top .links-box .title h4 {
+    margin: 0;
+}
+
+.info .container-top .next-btn-box {
+    text-align: left;
+    align-content: center;
+    width: 100%;
+    height: 2rem;
+    margin: 1rem 0;
+    padding-left: 3rem;
+}
+
+.info .container-top .next-btn-box .next-btn {
+    border: none;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color : var(--link-color);
+    background-color: transparent;
+}
+
+.info .container-top .next-btn-box span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color : var(--link-color);
+}
+
+.info .container {
+    margin: 2rem auto;
+    padding: 0;
+}
+
+/* .info .container .alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    height: 5rem;
+}
+
+.info .container .alert svg {
+    width: 25%;
+    height: 2rem;
+} */
+
+.info .container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 15px var(--shadow-color);
+    background-color: var(--white-color);
+}
+
+.info .container .content .company-info {
+    width: 50%;
+    height: 100%;
+}
+
+.info .container .content .company-info .header-box {
+    position: relative;
+    width: 40rem;
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.info .container .content .company-info .header-box h2 {
+    position: relative;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    z-index: 100;
+}
+
+.info .container .content .company-info .header-box::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: var(--yellow-color);
+    z-index: 10;
+}
+
+.info .container .content .company-info form {
+    width: 100%;
+    height: 30rem;
+    overflow-y: scroll;
+}
+
+.info .container .content .company-info form::-webkit-scrollbar {
+    width: 4.5rem;
+}
+
+.info .container .content .company-info form::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-right: 4rem white solid;
+    background-clip: padding-box;
+}
+
+.info .container .content .company-info .form-control:focus {
+    box-shadow: none;
+} 
+
+.info .container .content .company-info label {
+    font-weight: 600;
+} 
+
+.info .container .content .company-info .input-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: .5rem;
+    border: 1px solid var(--green-color);
+    border-radius: 1rem;
+}
+
+.info .container .content .company-info .input-box:hover {
+    width: 100%;
+    border: 1px solid var(--main-color);
+}
+
+.info .container .content .company-info .info-input {
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+}
+
+.info .container .content .company-info .info-textarea {
+    width: 100%;
+    height: 6rem;
+}
+
+.info .container .content .company-info .img-input {
+    width: 1.3rem;
+    height: 1.2rem;
+}
+
+.info .container .content .company-info .img-textarea {
+    width: 1.3rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 20px;
+}
+
+.info .container .content .company-info textarea {
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.info .container .content .side-image {
+    width: 47%;
+    height: 100%;
+}
+
+.info .container .content .side-image img {
+    width: 100%;
+    height: 700px;
+    border-radius: 1rem;
+}
+
+.info .container .content .company-info .btn-box {
+    width: 100%;
+    text-align: center;
+}
+
+.info .container .content .company-info .btn {
+    width: 13rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+}
+
+/* For contact country code. */
+.intl-tel-input.allow-dropdown .flag-container {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+}
+
+.intl-tel-input.allow-dropdown .selected-flag {
+    position: absolute;
+    left: 0rem;
+    width: 100% !important;
+}
+
+.intl-tel-input .selected-flag .iti-flag {
+    position: absolute;
+    right: 1rem;
+    left: 0rem;
+}
+
+.selected-flag .iti-flag {
+    margin-left: 1rem;
+}
+
+.intl-tel-input {
+    width: 100%;
+}
+
+.intl-tel-input .country-list {
+    top: 2rem;
+    left: 0rem;
+    width: 20rem;
+    height: 10rem;
+    overflow-x: hidden;
+}
+
+.intl-tel-input .country-list.dropup {
+    bottom: 100%;
+    margin-bottom: -10rem !important;
+}
+
+.intl-tel-input.allow-dropdown input[type=tel] {
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid var(--green-color);
+    border-radius: 1rem;
+    padding-left: 5rem !important; 
+}
+
+/* Alert */
+.error-alert,
+.warning-alert,
+.success-alert {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 23rem;
+    height: 5rem;
+    padding: 1.2rem;
+    border-radius: .3rem;
+    box-shadow: 1px 1px 15px var(--shadow-color);
+    background-color: #ffffff;
+    z-index: 110;
+}
+
+.warning-alert {
+    justify-content: space-between;
+    gap: 1rem;
+    width: max-content;
+    padding: .5rem;
+}
+
+.info .container .btn-alert {
+    color: #ffffff;
+    background-color: var(--main-color);
+}
+
+.info .container .p-alert {
+    margin: 0;
+    padding: 0rem 1.6rem 0 1rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    word-spacing: .2rem;
+    color: #626262;
+}
+
+.info .container .warning-alert .p-alert,
+.info .container .success-alert .p-alert {
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.info .container .success-alert .p-alert {
+    padding: 0rem 1.6rem 0 1rem;
+}
+
+.info .container .img-alert {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 968px) {
+    .info .container {
+        padding: 1rem;
+    }
+    .info .container .content .company-info .header-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .info .container .content .side-image {
+        display: none;
+    }
+    .info .container .content .company-info {
+        width: 100%;
+        height: 100%;
+    }
+    .info .container .content .company-info form {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .info .container-top .links-box {
+        padding: 0 1rem;
+    }
+    .info .container .content .company-info form::-webkit-scrollbar {
+        width: 1rem;
+    }
+    .info .container .content .company-info form::-webkit-scrollbar-thumb {
+        border-right: .5rem white solid;
+    }
+    .error-alert .btn-alert,
+    .warning-alert .btn-alert {
+        display: none;
+    }
+}

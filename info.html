@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
+    <title>Jade 30</title>
+</head>
+<body>
+    <div class="info">
+        <div class="container-top">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="Jade 30 Logo">
+            </div>
+            <div class="links-box">
+                <div class="links">
+                    <a class="link" href="index.html">الصفحة الرئيسية /</a>
+                    <h6>معلومات التواصل</h6>
+                </div>
+                <div class="title">
+                    <h4>معلومات التواصل</h4>
+                </div>
+            </div>
+            <div class="next-btn-box">
+                <button class="next-btn"> أسئلة عن الشركة </button>
+                <span>>></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="error-alert d-none">
+                <button  class="btn btn-alert close-error-alert">OK</button>
+                <p class="p-alert">يجب عليك إدخال البيانات المطلوبة اولاً</p>
+                <img src="./images/error-alert.png" class="img-alert">
+            </div>
+            <div class="warning-alert d-none">
+                <button  class="btn btn-alert close-warning-alert">OK</button>
+                <p class="p-alert"></p>
+                <img src="./images/warning-alert.png" class="img-alert">
+            </div>
+            <div class="success-alert d-none">
+                <button  class="btn btn-alert close-success-alert">OK</button>
+                <p class="p-alert">Successfully created</p>
+                <img src="./images/success-alert.png" class="img-alert">
+            </div>
+            <!-- Start Alert -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                <symbol id="check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </symbol>
+                <symbol id="info-fill" viewBox="0 0 16 16">
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                </symbol>
+                <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </symbol>
+            </svg>
+            <div class="alert alert-warning d-flex align-items-center d-none" role="alert">
+                <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div>من فضلك إملأ كامل الحقول بالبيانات</div>
+            </div>
+            <div class="alert alert-success d-flex align-items-center d-none" role="alert">
+                <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>تم حفظ البيانات</div>
+            </div> -->
+            <!-- End Alert -->
+            <div class="content">
+                <div class="company-info">
+                    <div class="header-box">
+                        <h2>إملأ بيانات شركتك و ساعدنا نوصللك</h2>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">اسم الشركة <span style="color:red; display: inline;">*</span></label>
+                            <div class="input-box">
+                                <img class="img-input" src="./images/name.png">
+                                <input type="text" class="form-control info-input" name="name" id="exampleFormControlInput1" placeholder="" maxlength="55" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">العنوان <span style="color:red; display: inline;">*</span></label>
+                            <div class="input-box">
+                                <img class="img-input" src="./images/address.png">
+                                <input type="text" class="form-control info-input" name="address"  id="exampleFormControlInput2" placeholder="" maxlength="55"  required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">السجل التجاري <span style="color:red; display: inline;">*</span></label>
+                            <div class="input-box">
+                                <img class="img-input" src="./images/commercial-registry.png">
+                                <input type="number" class="form-control info-input" name="commercial registry" id="exampleFormControlInput3" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput4" class="form-label">وصف الشركة <span style="color:gray; font-size: .75rem; display: inline;">(1 - 3 سطور)</span><span style="color:red; display: inline;">*</span></label>
+                            <div class="input-box">
+                                <img class="img-input img-textarea" src="./images/description.png">
+                                <textarea class="form-control info-input info-textarea" name="description" id="exampleFormControlTextarea4" rows="3" placeholder="" maxlength="100" required ></textarea>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput5" class="form-label">اسم المؤسس <span style="color:red; display: inline;">*</span></label>
+                            <div class="input-box">
+                                <img class="img-input" src="./images/founder.png">
+                                <input type="text" class="form-control info-input" name="founder" id ="exampleFormControlInput5" placeholder="" maxlength="55" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="exampleFormControlInput6" class="form-label">رقم التواصل <span style="color:red; display: inline;">*</span></label>
+                        </div>
+                        <div class="input-box">
+                        <input type="tel" class="form-control info-input input-tel" name="phone number" required>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="exampleFormControlInput7" class="form-label">البريد الإلكتروني <span style="color:red; display: inline;">*</span></label>
+                            <div class="input-box">
+                                <img class="img-input" src="./images/email.png">
+                                <input type="email" class="form-control info-input" name="email" id="exampleFormControlInput7" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="btn-box mb-3 mt-3">
+                            <button type="submit" class="btn btn-primary mb-3 save-btn">حفظ البيانات</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="side-image">
+                    <img src="./images/image2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/info.js"></script>
+</body>
+</html>

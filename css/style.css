@@ -1,0 +1,226 @@
+:root{
+    --main-color: #252e62;
+    --yellow-color: #ffda09;
+    --p-color: #2e376b	;
+    --white-color: #ffffff;
+    --section-color: #ecffff;
+    --span-color: #fffcae;
+    --green-color: #2ac2bc;
+    --red-color: #ff3150;
+    --gray-color: #799ea1;
+    --link-color: #50a3c4;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 1rem 0;
+    color: var(--main-color);
+}
+
+label{
+    color: var(--main-color);
+}
+
+p {
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    color: var(--p-color);
+}
+
+a {
+    text-decoration: none;
+    color : var(--white-color);
+}
+
+button {
+    width: 10rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    letter-spacing: -.05rem;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+} 
+
+.main .container {
+
+}
+
+.main .container .logo {
+    width: 100%;
+    height: 5rem;
+    margin: 1rem 0;
+    text-align: center;
+    align-content: center;
+}
+
+.main .container .logo img {
+    width: 15rem;
+    height: 5rem;
+}
+
+.main .container .brief {
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.main .container .brief .header-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main .container .brief .header-box h2 {
+    position: relative;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    z-index: 100;
+}
+
+.main .container .brief .header-box::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: var(--yellow-color);
+    z-index: 10;
+}
+
+.main .container .brief p {
+    width: 90%;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--p-color);
+}
+
+.main .container .brief .btn {
+    width: 13rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+}
+
+.main .container .steps {
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0 5rem;
+    text-align: center;
+}
+
+.main .container .steps h4 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.main .container .steps .card-group {
+    width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.main .container .steps .card-group .card {
+    height: 22rem;
+    border-radius: 1rem;
+    box-shadow: 2px -2px 25px var(--section-color);
+}
+
+.main .container .steps .card-group .card .card1-head {
+    background-image: linear-gradient(to top,rgb(21, 255, 0, 0.1),rgba(255,0,0,0));
+}
+
+.main .container .steps .card-group .card .card2-head {
+    background-image: linear-gradient(to top,rgba(0, 229, 255, 0.1),rgba(255,0,0,0));
+}
+
+.main .container .steps .card-group .card .card3-head {
+    background-image: linear-gradient(to top,rgba(0, 64, 255, 0.1),rgba(255,0,0,0));
+}
+
+.main .container .steps .card-group .card .card-img-top {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem auto 0;
+}
+
+.main .container .steps .card-group .card .card-title {
+    margin: 1rem auto 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main .container .steps .card-group .card .card-body {
+    background-image: url(../images/step-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main .container .steps .card-group .card .card-text {
+    width: 90%;
+    margin: .5rem auto;
+    text-align: right;
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 968px) {
+    .container {
+        max-width: 100%;
+    }
+    .main .container .brief .header-box h2 {
+        font-size: 1.7rem;
+    }
+    .main .container .brief p {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .main .container .brief .header-box h2 {
+        font-size: 1.5rem;
+    }
+    .main .container .steps .card-group {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .info .container-top .links {
+        padding: 0 1rem;
+    }
+}
